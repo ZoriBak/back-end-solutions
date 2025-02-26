@@ -1,39 +1,42 @@
-<?php
-   
-    $text = 'Test 123...';
-    $text2 = 'Test 456'; 
-    $_text3 = 'test';
-    $first_sentence = 'Building castles in the sky and in the sand'; 
-    $animal = "Platypus"; 
-
-?>
-
 <!DOCTYPE html>
-<html> 
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/css/global.css">
-    <link rel="stylesheet" type="text/css" href="/css/directory.css">
-    <link rel="stylesheet" type="text/css" href="/css/facade.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day of the Week</title>
 </head>
-
 <body>
+    <h2>Day of the Week Based on Number:</h2>
 
-    <h1>Debug errors</h1>
+    <?php
+        $number = 3;
 
-    <ul>
-        <li>Debug this page so the script runs without error</li>
-        <li>Print all the variables in an unordered list below:</li>
-    </ul>  
-
-    <ul>
-        <li><?php echo $text; ?></li>
-        <li><?php echo $text2; ?></li>
-        <li><?php echo $_text3; ?></li>
-        <li><?php echo $first_sentence; ?></li>
-        <li><?php echo $animal; ?></li>
-    </ul>
+        switch ($number) {
+            case 1:
+                echo "monday";
+                break;
+            case 2:
+                echo "tuesday";
+                break;
+            case 3:
+                echo "wednesday";
+                break;
+            case 4:
+                echo "thursday";
+                break;
+            case 5:
+                echo "friday";
+                break;
+            case 6:
+                echo "saturday";
+                break;
+            case 7:
+                echo "sunday";
+                break;
+            default:
+                echo "Invalid number! Please enter a number between 1 and 7.";
+        }
+    ?>
 
 </body>
 </html>

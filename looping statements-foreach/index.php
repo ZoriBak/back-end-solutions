@@ -18,7 +18,7 @@ $charCount = array_count_values($textChars);
     <title>Character Count</title>
 </head>
 <body>
-    <h2>Character Analysis</h2>
+    <h2>Character</h2>
     <p><strong>Total Different Characters:</strong> <?php echo count($charCount); ?></p>
 
     <h3>Character Frequency:</h3>

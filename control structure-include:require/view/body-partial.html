@@ -1,0 +1,13 @@
+<main>
+    <h2>News</h2>
+    <?php foreach ($articles as $article): ?>
+    <article>
+        <h3><?= htmlspecialchars($article['title']) ?></h3>
+        <p><?= htmlspecialchars($article['text']) ?></p>
+        <p class="tags">
+            Keywords: <?= implode(', ', array_map('htmlspecialchars', $article['tags'])) ?>
+        </p>
+    </article>
+    <?php endforeach; ?>
+</main>
+
